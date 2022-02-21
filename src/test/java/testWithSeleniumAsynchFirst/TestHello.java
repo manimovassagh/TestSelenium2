@@ -2,6 +2,7 @@ package testWithSeleniumAsynchFirst;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.After;
 import org.junit.Before;
@@ -78,7 +79,7 @@ public class TestHello {
 		WebElement btc= driver.findElement(By.cssSelector(btcSelector)); 
 		String btcPrice=btc.getAttribute("data-sort");
 		assertNotEquals(btcPrice, "38302.*");
-		
+		assertTrue(btcPrice.contains("37"));
 		
 	
 
