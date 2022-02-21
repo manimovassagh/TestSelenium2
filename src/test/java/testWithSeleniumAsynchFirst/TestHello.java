@@ -36,7 +36,7 @@ public class TestHello {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String expect = "coding blog - Coding Solo | programmierblog | tutorials | Videos";
+		String expect = "coding blog - Coding Solo | programmierblog | tutorials | Videos2";
 
 		driver.findElement(By.cssSelector("#header_main > div > div > span > a > img")).click();
 
